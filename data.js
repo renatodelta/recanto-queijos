@@ -1,9 +1,14 @@
 let storeData = {
     name: "Seleção Recanto",
+    version: "1.0.1",
     phone: "5511999999999", // Número do WhatsApp
     address: "Recanto Formoso, S/N",
-    hours: "Ter a Dom: 10h às 18h",
-    status: "open" // "open" ou "closed"
+    hours: "Seg a Sáb: 05:00 às 20:00",
+    openingHours: {
+        start: 5,
+        end: 20
+    },
+    status: "auto" // Alterado para automático
 };
 
 let categories = [

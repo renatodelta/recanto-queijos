@@ -13,7 +13,22 @@ const checkStoreStatus = () => {
     const statusBadge = document.getElementById('store-status');
     const closedBanner = document.getElementById('closed-banner');
     
-    if (storeData.status !== 'closed') {
+    const now = new Date();
+    const day = now.getDay(); // 0 = Domingo, 1-6 = Segunda a Sábado
+    const currentHour = now.getHours();
+    
+    // Se status for manual 'closed', respeita. Senão, faz check automático.
+    let isOpen = false;
+    
+    if (storeData.status === 'closed') {
+        isOpen = false;
+    } else {
+        const isBusinessDay = day >= 1 && day <= 6;
+        const isWithinHours = currentHour >= storeData.openingHours.start && currentHour < storeData.openingHours.end;
+        isOpen = isBusinessDay && isWithinHours;
+    }
+    
+    if (isOpen) {
         statusBadge.textContent = '🟢 Aberto agora';
         statusBadge.classList.add('open');
         statusBadge.classList.remove('closed');
