@@ -1,73 +1,226 @@
 let storeData = {
-    name: "Seleção Recanto",
-    version: "1.0.1",
+    name: "Recanto Formoso",
+    version: "1.1.0",
     phone: "5511999999999", // Número do WhatsApp
-    address: "Recanto Formoso, S/N",
+    address: "Recanto Formoso, S/N, Região de Formoso",
     hours: "Seg a Sáb: 05:00 às 20:00",
     openingHours: {
         start: 5,
         end: 20
     },
-    status: "auto" // Alterado para automático
+    status: "auto"
 };
 
 let categories = [
-    { id: "frescos", name: "🧀 Queijos Frescos" },
-    { id: "curados", name: "🧀 Queijos Curados" }
+    { id: "laticinios", name: "🧀 Laticínios & Queijos" },
+    { id: "doces", name: "🍬 Doces Artesanais" },
+    { id: "biscoitos", name: "🍪 Biscoitos Caseiros" }
 ];
 
 let products = [
-    // Maturados
+    // LATICÍNIOS E QUEIJOS
     { 
         id: 1, 
-        category: 'maturados', 
-        name: 'Queijo Canastra Meia Cura', 
-        price: 65.00, 
-        desc: 'Peça aprox. 800g. Casca amarelada, interior macio. Perfeito com um café.', 
-        image: 'https://cdn.sistemawbuy.com.br/arquivos/f90918cf526847bc1815e967a5b3a4a1/produtos/MNB1UG3/14-06-23-6489dc240a5a5-6712b32cd58dc_mini.jpg' 
+        category: 'laticinios', 
+        name: 'Queijo Frescal Grande', 
+        price: 30.00, 
+        desc: 'Feito com o leite mais puro da nossa região, este queijo frescal traz o frescor da manhã em Formoso. Macio, leve e produzido com todo carinho artesanal.', 
+        image: 'imgs/frescal.jpg' 
     },
     { 
         id: 2, 
-        category: 'maturados', 
-        name: 'Queijo Parmesão Artesanal', 
-        price: 85.00, 
-        desc: 'Peça aprox. 500g. Maturação de 6 meses, cristais de sal, sabor intenso e picante.', 
-        image: 'https://s2.glbimg.com/O6m7_kPnsy0Y2nF8-4Q17F72S5U=/e.glbimg.com/og/ed/f/original/2016/11/04/queijos.jpg' 
+        category: 'laticinios', 
+        name: 'Queijo Frescal Pequeno', 
+        price: 15.00, 
+        desc: 'A mesma qualidade e amor do nosso frescal grande, em uma porção perfeita para o seu café da manhã individual ou em casal.', 
+        image: 'imgs/frescal.jpg' 
     },
-
-    // Frescos
     { 
         id: 3, 
-        category: 'frescos', 
-        name: 'Queijo Minas Frescal', 
-        price: 35.00, 
-        desc: 'Peça aprox. 500g. Leve, molhadinho e com baixo teor de sal.', 
-        image: 'https://vivarioma.com.br/wp-content/uploads/2018/11/receita_de_queijo_minas.jpg' 
+        category: 'laticinios', 
+        name: 'Queijo Meia Cura', 
+        price: 37.00, 
+        desc: 'O equilíbrio perfeito entre o frescor e a maturação. Com sabor acentuado e textura única, é a alma da nossa produção artesanal em Formoso.', 
+        image: 'imgs/frescal.jpg' 
     },
     { 
         id: 4, 
-        category: 'frescos', 
-        name: 'Requeijão de Corte', 
-        price: 45.00, 
-        desc: 'Peça aprox. 400g. Aquele tradicional requeijão moreno da roça.', 
-        image: 'https://t2.rg.ltmcdn.com/pt/posts/9/5/6/requeijao_de_corte_com_queijo_prato_7659_orig.jpg' 
+        category: 'laticinios', 
+        name: 'Queijo Meia Cura (Metade)', 
+        price: 18.50, 
+        desc: 'Para quem quer saborear a tradição do nosso meia cura em uma porção menor. Metade do tamanho, o mesmo amor envolvido.', 
+        image: 'imgs/frescal.jpg' 
     },
-
-    // Doces
     { 
         id: 5, 
-        category: 'doces', 
-        name: 'Doce de Leite na Palha', 
-        price: 25.00, 
-        desc: 'Barra de 300g. O acompanhamento perfeito para o Queijo Canastra.', 
-        image: 'https://img.elo7.com.br/product/main/29F2573/doce-de-leite-na-palha-pacote-com-250g-doces.jpg' 
+        category: 'laticinios', 
+        name: 'Queijo Parmesão', 
+        price: 52.00, 
+        desc: 'Intenso, aromático e maturado com paciência. Nosso parmesão artesanal eleva qualquer receita ou tábua de queijos ao próximo nível.', 
+        image: 'imgs/frescal.jpg' 
     },
     { 
         id: 6, 
+        category: 'laticinios', 
+        name: 'Queijo Parmesão (Metade)', 
+        price: 26.00, 
+        desc: 'A intensidade do nosso parmesão artesanal em uma porção prática para o dia a dia.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 7, 
+        category: 'laticinios', 
+        name: 'Mussarela (kg)', 
+        price: 40.00, 
+        desc: 'Derrete na boca e no coração. Uma mussarela produzida com leite selecionado, ideal para pizzas, sanduíches ou puro deleite.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 8, 
+        category: 'laticinios', 
+        name: 'Mussarela de Búfala (kg)', 
+        price: 48.00, 
+        desc: 'Extremamente cremosa e delicada. Nossa mussarela de búfala é um toque de sofisticação artesanal vindo diretamente de nossos pastos.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 9, 
+        category: 'laticinios', 
+        name: 'Queijo Frescal de Búfala', 
+        price: 18.00, 
+        desc: 'Uma variação leve e nutritiva do nosso tradicional frescal, com toda a cremosidade única do leite de búfala.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 10, 
+        category: 'laticinios', 
+        name: 'Nozinho', 
+        price: 22.00, 
+        desc: 'O petisco favorito! Feito à mão com muito carinho, cada nozinho carrega o sabor da nossa tradição queijeira.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 11, 
+        category: 'laticinios', 
+        name: 'Nozinho de Búfala (250g)', 
+        price: 13.00, 
+        desc: 'Pequenas porções de puro prazer. Macios e suculentos, feitos com leite de búfala selecionado.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 12, 
+        category: 'laticinios', 
+        name: 'Ricota Temperada (pote 250g)', 
+        price: 10.00, 
+        desc: 'Leveza com um toque especial de ervas. Nossa ricota artesanal é perfeita para torradas e lanches saudáveis.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 13, 
+        category: 'laticinios', 
+        name: 'Requeijão (pote 250g)', 
+        price: 9.00, 
+        desc: 'A cremosidade que você já conhece com o sabor autêntico da fazenda. Sem conservantes, apenas leite e amor.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 14, 
+        category: 'laticinios', 
+        name: 'Manteiga', 
+        price: 11.00, 
+        desc: 'Feita do creme de leite batido aqui mesmo. Sabor de verdade que derrete no pão quentinho.', 
+        image: 'imgs/frescal.jpg' 
+    },
+
+    // DOCES
+    { 
+        id: 15, 
+        category: 'doces', 
+        name: 'Bananada Artesanal', 
+        price: 22.00, 
+        desc: 'O doce da fruta concentrado com o carinho do tacho de cobre. Uma explosão de sabor natural de Formoso.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 16, 
         category: 'doces', 
         name: 'Goiabada Cascão', 
-        price: 20.00, 
-        desc: 'Peça de 400g. Para fazer aquele Romeu e Julieta inesquecível.', 
-        image: 'https://static1.casapraticaqualita.com.br/articles/4/49/74/@/56230-o-queijo-com-goiabada-e-uma-das-sobremes-article_lead-1.jpg' 
+        price: 22.00, 
+        desc: 'Pedaços da fruta e a textura perfeita da tradição mineira. O par perfeito para o nosso queijo meia cura.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 17, 
+        category: 'doces', 
+        name: 'Doce de Leite (Pote)', 
+        price: 10.00, 
+        desc: 'Cozinhado lentamente até atingir a cor e o ponto perfeitos. Cremoso, doce na medida e inesquecível.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 18, 
+        category: 'doces', 
+        name: 'Doce de Leite Talhado', 
+        price: 10.00, 
+        desc: 'O famoso doce de "caroço" que remete à infância na roça. Textura rústica e sabor nostálgico.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 19, 
+        category: 'doces', 
+        name: 'Doce de Leite em Tabletes', 
+        price: 4.50, 
+        desc: 'A praticidade do tablete com o sabor artesanal. Perfeito para adoçar o dia a qualquer momento.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 20, 
+        category: 'doces', 
+        name: 'Doce de Mamão', 
+        price: 10.00, 
+        desc: 'Feito com frutas colhidas no ponto, este doce cristalizado traz a doçura do pomar de Formoso para sua mesa.', 
+        image: 'imgs/frescal.jpg' 
+    },
+    { 
+        id: 21, 
+        category: 'doces', 
+        name: 'Doce de Abóbora', 
+        price: 10.00, 
+        desc: 'Clássico das fazendas, nossa receita de família garante um doce macio e muito aromático.', 
+        image: 'imgs/frescal.jpg' 
+    },
+
+    // BISCOITOS
+    { 
+        id: 22, 
+        category: 'biscoitos', 
+        name: 'Goiabinha (500g)', 
+        price: 17.00, 
+        desc: 'Massa amanteigada que derrete na boca com um recheio generoso de goiabada artesanal.', 
+        image: 'imgs/pao.png' 
+    },
+    { 
+        id: 23, 
+        category: 'biscoitos', 
+        name: 'Casadinho (500g)', 
+        price: 17.00, 
+        desc: 'O encontro perfeito de duas massas leves unidas por um recheio de doce de leite caseiro.', 
+        image: 'imgs/pao.png' 
+    },
+    { 
+        id: 24, 
+        category: 'biscoitos', 
+        name: 'Biscoito de Nata (500g)', 
+        price: 17.00, 
+        desc: 'O verdadeiro sabor da fazenda. Feito com nata fresquinha, crocante e irresistível.', 
+        image: 'imgs/pao.png' 
+    },
+    { 
+        id: 25, 
+        category: 'biscoitos', 
+        name: 'Biscoito de Aveia (300g)', 
+        price: 13.00, 
+        desc: 'Uma opção nutritiva e deliciosa, feita com aveia selecionada e o toque artesanal do Recanto.', 
+        image: 'imgs/pao.png' 
     }
 ];

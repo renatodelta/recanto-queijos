@@ -1,12 +1,12 @@
 {
-  "name": "Seleção Recanto",
-  "short_name": "Queijos",
+  "name": "Recanto Formoso | Queijos & Laticínios",
+  "short_name": "Recanto",
   "id": "/",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "theme_color": "#4a3728",
-  "background_color": "#fdfaf6",
+  "theme_color": "#2d1610",
+  "background_color": "#fdfaf5",
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
