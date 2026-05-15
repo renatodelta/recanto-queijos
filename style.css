@@ -1,17 +1,17 @@
 :root {
-    --primary: #2d1610; /* Marrom escuro do fundo da logo */
-    --primary-hover: #1e0d0b;
-    --accent: #f4c542; /* Dourado do queijo */
+    --primary: #2b1410; /* Marrom escuro exato da recanto2 */
+    --primary-hover: #1a0d0a;
+    --accent: #f4c542; /* Dourado exato do queijo */
     --accent-hover: #e0b430;
-    --bg-color: #fdfaf5; /* Fundo creme suave */
+    --bg-color: #fdfaf5; 
     --card-bg: #ffffff;
-    --text-main: #1e0d0b; /* Marrom profundo quase preto */
+    --text-main: #1a0d0a; 
     --text-muted: #6b5a4b;
-    --secondary: #f9f3d9; /* Creme da logo */
+    --secondary: #f9f3d9; 
     --success: #16a34a;
     --danger: #dc2626;
     --border: #ece1d2;
-    --shadow: 0 10px 30px -5px rgba(45, 22, 16, 0.15), 0 8px 12px -6px rgba(45, 22, 16, 0.1);
+    --shadow: 0 10px 30px -5px rgba(43, 20, 16, 0.2), 0 8px 12px -6px rgba(43, 20, 16, 0.1);
     --border-radius: 20px;
     --glass-bg: rgba(255, 255, 255, 0.8);
     --glass-border: rgba(255, 255, 255, 0.3);
@@ -34,7 +34,7 @@ body {
 /* Header */
 .store-header {
     position: relative;
-    background: linear-gradient(135deg, var(--primary) 0%, #452118 100%);
+    background: radial-gradient(circle, #3d1a11 0%, #1a0d0a 100%);
     padding: 60px 20px;
     text-align: center;
     color: white;
@@ -64,16 +64,19 @@ body {
 
 .store-logo {
     width: 100%;
-    max-width: 260px;
+    max-width: 400px;
     height: auto;
     object-fit: contain;
-    border-radius: 24px;
-    border: 3px solid var(--accent);
+    border-radius: 12px;
     margin-bottom: 25px;
-    background: var(--primary);
-    box-shadow: 0 0 20px rgba(244, 197, 66, 0.3), 0 10px 30px rgba(0,0,0,0.5);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation: logoEntry 1s ease-out forwards;
+}
+
+.store-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.6));
 }
 
 @keyframes logoEntry {

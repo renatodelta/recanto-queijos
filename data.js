@@ -25,7 +25,7 @@ let products = [
         name: 'Queijo Frescal Grande', 
         price: 30.00, 
         desc: 'Feito com o leite mais puro da nossa região, este queijo frescal traz o frescor da manhã em Formoso. Macio, leve e produzido com todo carinho artesanal.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/frescal.png' 
     },
     { 
         id: 2, 
@@ -33,7 +33,7 @@ let products = [
         name: 'Queijo Frescal Pequeno', 
         price: 15.00, 
         desc: 'A mesma qualidade e amor do nosso frescal grande, em uma porção perfeita para o seu café da manhã individual ou em casal.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/frescal.png' 
     },
     { 
         id: 3, 
@@ -41,7 +41,7 @@ let products = [
         name: 'Queijo Meia Cura', 
         price: 37.00, 
         desc: 'O equilíbrio perfeito entre o frescor e a maturação. Com sabor acentuado e textura única, é a alma da nossa produção artesanal em Formoso.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/meiacura.png' 
     },
     { 
         id: 4, 
@@ -49,7 +49,7 @@ let products = [
         name: 'Queijo Meia Cura (Metade)', 
         price: 18.50, 
         desc: 'Para quem quer saborear a tradição do nosso meia cura em uma porção menor. Metade do tamanho, o mesmo amor envolvido.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/meiacura.png' 
     },
     { 
         id: 5, 
@@ -57,7 +57,7 @@ let products = [
         name: 'Queijo Parmesão', 
         price: 52.00, 
         desc: 'Intenso, aromático e maturado com paciência. Nosso parmesão artesanal eleva qualquer receita ou tábua de queijos ao próximo nível.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/parmesao.png' 
     },
     { 
         id: 6, 
@@ -65,7 +65,7 @@ let products = [
         name: 'Queijo Parmesão (Metade)', 
         price: 26.00, 
         desc: 'A intensidade do nosso parmesão artesanal em uma porção prática para o dia a dia.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/parmesao.png' 
     },
     { 
         id: 7, 
@@ -73,7 +73,7 @@ let products = [
         name: 'Mussarela (kg)', 
         price: 40.00, 
         desc: 'Derrete na boca e no coração. Uma mussarela produzida com leite selecionado, ideal para pizzas, sanduíches ou puro deleite.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/nozinho.png' 
     },
     { 
         id: 8, 
@@ -81,7 +81,7 @@ let products = [
         name: 'Mussarela de Búfala (kg)', 
         price: 48.00, 
         desc: 'Extremamente cremosa e delicada. Nossa mussarela de búfala é um toque de sofisticação artesanal vindo diretamente de nossos pastos.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/mussarela_bufala.png' 
     },
     { 
         id: 9, 
@@ -89,7 +89,7 @@ let products = [
         name: 'Queijo Frescal de Búfala', 
         price: 18.00, 
         desc: 'Uma variação leve e nutritiva do nosso tradicional frescal, com toda a cremosidade única do leite de búfala.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/mussarela_bufala.png' 
     },
     { 
         id: 10, 
@@ -97,7 +97,7 @@ let products = [
         name: 'Nozinho', 
         price: 22.00, 
         desc: 'O petisco favorito! Feito à mão com muito carinho, cada nozinho carrega o sabor da nossa tradição queijeira.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/nozinho.png' 
     },
     { 
         id: 11, 
@@ -105,7 +105,7 @@ let products = [
         name: 'Nozinho de Búfala (250g)', 
         price: 13.00, 
         desc: 'Pequenas porções de puro prazer. Macios e suculentos, feitos com leite de búfala selecionado.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/nozinho.png' 
     },
     { 
         id: 12, 
@@ -113,7 +113,7 @@ let products = [
         name: 'Ricota Temperada (pote 250g)', 
         price: 10.00, 
         desc: 'Leveza com um toque especial de ervas. Nossa ricota artesanal é perfeita para torradas e lanches saudáveis.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/ricota.png' 
     },
     { 
         id: 13, 
@@ -121,7 +121,7 @@ let products = [
         name: 'Requeijão (pote 250g)', 
         price: 9.00, 
         desc: 'A cremosidade que você já conhece com o sabor autêntico da fazenda. Sem conservantes, apenas leite e amor.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/requeijao.png' 
     },
     { 
         id: 14, 
@@ -129,7 +129,7 @@ let products = [
         name: 'Manteiga', 
         price: 11.00, 
         desc: 'Feita do creme de leite batido aqui mesmo. Sabor de verdade que derrete no pão quentinho.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/manteiga.png' 
     },
 
     // DOCES
@@ -139,7 +139,7 @@ let products = [
         name: 'Bananada Artesanal', 
         price: 22.00, 
         desc: 'O doce da fruta concentrado com o carinho do tacho de cobre. Uma explosão de sabor natural de Formoso.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/bananada.png' 
     },
     { 
         id: 16, 
@@ -147,7 +147,7 @@ let products = [
         name: 'Goiabada Cascão', 
         price: 22.00, 
         desc: 'Pedaços da fruta e a textura perfeita da tradição mineira. O par perfeito para o nosso queijo meia cura.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/goiabada.png' 
     },
     { 
         id: 17, 
@@ -155,7 +155,7 @@ let products = [
         name: 'Doce de Leite (Pote)', 
         price: 10.00, 
         desc: 'Cozinhado lentamente até atingir a cor e o ponto perfeitos. Cremoso, doce na medida e inesquecível.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/docedeleite.png' 
     },
     { 
         id: 18, 
@@ -163,7 +163,7 @@ let products = [
         name: 'Doce de Leite Talhado', 
         price: 10.00, 
         desc: 'O famoso doce de "caroço" que remete à infância na roça. Textura rústica e sabor nostálgico.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/docedeleite.png' 
     },
     { 
         id: 19, 
@@ -171,7 +171,7 @@ let products = [
         name: 'Doce de Leite em Tabletes', 
         price: 4.50, 
         desc: 'A praticidade do tablete com o sabor artesanal. Perfeito para adoçar o dia a qualquer momento.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/docedeleite.png' 
     },
     { 
         id: 20, 
@@ -179,7 +179,7 @@ let products = [
         name: 'Doce de Mamão', 
         price: 10.00, 
         desc: 'Feito com frutas colhidas no ponto, este doce cristalizado traz a doçura do pomar de Formoso para sua mesa.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/bananada.png' 
     },
     { 
         id: 21, 
@@ -187,7 +187,7 @@ let products = [
         name: 'Doce de Abóbora', 
         price: 10.00, 
         desc: 'Clássico das fazendas, nossa receita de família garante um doce macio e muito aromático.', 
-        image: 'imgs/frescal.jpg' 
+        image: 'imgs/bananada.png' 
     },
 
     // BISCOITOS
@@ -197,7 +197,7 @@ let products = [
         name: 'Goiabinha (500g)', 
         price: 17.00, 
         desc: 'Massa amanteigada que derrete na boca com um recheio generoso de goiabada artesanal.', 
-        image: 'imgs/pao.png' 
+        image: 'imgs/biscoitos.png' 
     },
     { 
         id: 23, 
@@ -205,7 +205,7 @@ let products = [
         name: 'Casadinho (500g)', 
         price: 17.00, 
         desc: 'O encontro perfeito de duas massas leves unidas por um recheio de doce de leite caseiro.', 
-        image: 'imgs/pao.png' 
+        image: 'imgs/biscoitos.png' 
     },
     { 
         id: 24, 
@@ -213,7 +213,7 @@ let products = [
         name: 'Biscoito de Nata (500g)', 
         price: 17.00, 
         desc: 'O verdadeiro sabor da fazenda. Feito com nata fresquinha, crocante e irresistível.', 
-        image: 'imgs/pao.png' 
+        image: 'imgs/biscoitos.png' 
     },
     { 
         id: 25, 
@@ -221,6 +221,6 @@ let products = [
         name: 'Biscoito de Aveia (300g)', 
         price: 13.00, 
         desc: 'Uma opção nutritiva e deliciosa, feita com aveia selecionada e o toque artesanal do Recanto.', 
-        image: 'imgs/pao.png' 
+        image: 'imgs/biscoitos.png' 
     }
 ];
